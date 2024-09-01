@@ -6,14 +6,14 @@ Function templates on the other hand are a way to achieve generic programming, w
 
 Overloading function templates in C++ involves several core concepts:
 
-| Core Concept | Description | Example |
-| --- | --- | --- |
-| Function Templates | A blueprint for creating functions that can handle data of various types. | `template <typename T> T add(T a, T b) {...}` |
-| Template Parameters | Placeholders for types or values within a function template. | `T` in `template <typename T>` |
-| Function Overloading | A feature where two or more functions can have the same name but different parameters. | `void print(int i)` and `void print(double f)` |
-| Template Specialization | A specific version of a function template defined for a particular type. | `template <> std::string add<std::string>(std::string a, std::string b) {...}` |
-| Type Deduction | The compiler's automatic determination of the type of the template parameters based on the function arguments. | If `add(3, 4)` is called, the compiler deduces `T` is `int` |
-| Compile-Time Polymorphism | The correct function to call is determined at compile time based on the function arguments. | If `add(3, 4)` is called, the `add` function for `int` is used |
+| Core Concept | Definition | Example | Mnemonic |
+| --- | --- | --- | --- |
+| Function Templates | A blueprint for creating functions that can handle data of various types. | `template <typename T> T add(T a, T b) {...}` | **T**emplates are **T**ools for **T**ypes |
+| Template Parameters | Placeholders for types or values within a function template. | `T`** in `template <typename T>` | **P**arameters are **P**laceholders |
+| Function Overloading | Multiple functions with the same name but different parameters. | `void print(int i)` and `void print(double f)` | **O**verloading means **O**ne name, many forms |
+| Template Specialization | A specific version of a function template defined for a particular type. | `template <> std::string add<std::string>(std::string a, std::string b) {...}` | **S**pecialization is for **S**pecific types |
+| Type Deduction | The compiler’s automatic determination of the type of the template parameters based on the function arguments. | If `add(3, 4)` is called, the compiler deduces `T` is `int` | **D**eduction means **D**etermined by the compiler |
+| Compile-Time Polymorphism | The correct function to call is determined at compile time based on the function arguments. | If `add(3, 4)` is called, the `add` function for `int` is used | **C**ompile-time means **C**orrect function chosen early |
 
 # Code Sample
 
