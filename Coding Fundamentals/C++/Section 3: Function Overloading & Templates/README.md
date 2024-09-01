@@ -9,7 +9,7 @@ Overloading function templates in C++ involves several core concepts:
 | Core Concept | Definition | Example | Mnemonic |
 | --- | --- | --- | --- |
 | Function Templates | A blueprint for creating functions that can handle data of various types. | `template <typename T> T add(T a, T b) {...}` | **T**emplates are **T**ools for **T**ypes |
-| Template Parameters | Placeholders for types or values within a function template. | `T`** in `template <typename T>` | **P**arameters are **P**laceholders |
+| Template Parameters | Placeholders for types or values within a function template. | `T` in `template <typename T>` | **P**arameters are **P**laceholders |
 | Function Overloading | Multiple functions with the same name but different parameters. | `void print(int i)` and `void print(double f)` | **O**verloading means **O**ne name, many forms |
 | Template Specialization | A specific version of a function template defined for a particular type. | `template <> std::string add<std::string>(std::string a, std::string b) {...}` | **S**pecialization is for **S**pecific types |
 | Type Deduction | The compiler’s automatic determination of the type of the template parameters based on the function arguments. | If `add(3, 4)` is called, the compiler deduces `T` is `int` | **D**eduction means **D**etermined by the compiler |
